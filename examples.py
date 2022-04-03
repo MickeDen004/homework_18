@@ -1,20 +1,26 @@
-# from dataclasses import dataclass
-# from random import shuffle
-#
-# @dataclass
-# class Card_deck:
-#     deck = []
-#     broadway = ['J', 'Q', 'K', 'A']
-#     suit = ['h', 'd', 'c', 's']
-#     def create_deck(self):
-#         for suit in self.suit:
-#             for i in range(2, 11):
-#                 self.deck.append(str(i)+suit)
-#             for i in self.broadway:
-#                 self.deck.append(i+suit)
-#
-#     def shuffle(self):
-#         shuffle(self.deck)
-#
-#     def hand_out(self, player):
-#         for i in range(player):
+class Vehicle:
+    def vehicle_method(self):
+        print("Это родительский метод из класса Vehicle")
+
+
+# Создание класса Car, который наследует Vehicle
+class Car(Vehicle):
+    def car_method(self):
+        print("Это метод из дочернего класса")
+
+
+
+class Car:
+    # создаем атрибуты класса
+    name = "c200"
+    make = "mercedez"
+    model = 2008
+
+    # создаем методы класса
+    def start(self):
+        print("Заводим двигатель")
+
+    def stop(self):
+        print("Отключаем двигатель")
+
+

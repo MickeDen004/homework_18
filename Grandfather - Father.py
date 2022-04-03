@@ -90,6 +90,7 @@ father.print_age()
 father.calculate_savings(13450.34, 21, 1, 2)
 print(father.__dir__())
 print()
-son = Son("Steve", "Bradisley", "20", "Canada")
+son = Son("Steve", "Bradisley", "20", "Canada", 2004, "University of Berkley")
 print(son.__dir__())
+son.calculate_student_loan_interest(12, 10000, 30)
 
